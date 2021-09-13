@@ -1,0 +1,27 @@
+{
+  "name": "projeto-testes",
+  "version": "1.0.0",
+  "description": "amigo-secreto-testes",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Patrick",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "setupFilesAfterEnv": ["mock-local-storage"]
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.8",
+    "babel-jest": "^27.0.6",
+    "jest": "^27.1.0",
+    "mock-local-storage": "^1.1.17"
+  }
+}

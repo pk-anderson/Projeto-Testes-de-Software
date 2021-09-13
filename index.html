@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto - Amigo secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="main" href="#home">Amigo secreto</a>
+    </div>
+    <div class="container">
+        <div id="adicionar">
+            <h1>Adicionar participante</h1>
+            <form>
+                <div class="formcontent">
+                    <label for="Nome">Nome:</label><br>
+                    <input type="text" name="nome" id="nome"><br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="text" name="email" id="email"><br>
+                    <input type="submit" id="submit" class="submit" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div id="participantes">
+            <h1>Lista de participantes</h1>
+            <ul id="listaparticipantes">
+
+            </ul>
+        </div>
+        <hr>
+        <div id="sorteio">
+            <h1>O sorteio pode ser realizado quando houverem 3 ou mais participantes!</h2>
+                <ul id="resultado">
+
+                </ul>
+            <input type="submit" id="submit" class="sortear" value="Sortear">
+        </div>
+    </div>
+    <footer>Projeto Testes de software - Patrick Anderson, Allyson Oliveira</footer>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="cadastro.js"></script>
+</body>
+</html>
