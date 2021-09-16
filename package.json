@@ -9,13 +9,16 @@
   "author": "Patrick",
   "license": "ISC",
   "dependencies": {
+    "cypress": "^8.4.0",
     "lodash": "^4.17.21"
   },
   "jest": {
     "transform": {
       "^.+\\.[t|j]sx?$": "babel-jest"
     },
-    "setupFilesAfterEnv": ["mock-local-storage"]
+    "setupFilesAfterEnv": [
+      "mock-local-storage"
+    ]
   },
   "keywords": [],
   "devDependencies": {
@@ -23,5 +26,13 @@
     "babel-jest": "^27.0.6",
     "jest": "^27.1.0",
     "mock-local-storage": "^1.1.17"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pk-anderson/Projeto-Testes-de-Software.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pk-anderson/Projeto-Testes-de-Software/issues"
+  },
+  "homepage": "https://github.com/pk-anderson/Projeto-Testes-de-Software#readme"
 }

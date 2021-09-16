@@ -29,9 +29,11 @@ function listarParticipante(participante) {
     const listarParticipantes = document.querySelector("#listaparticipantes");
     let lista = getParticipantes();
     
+    let span = document.createElement("span")
+    span.textContent = `${lista.length} - ${participante.nome}`;
     let liElement = document.createElement("li");
     liElement.setAttribute("id", lista.length - 1);
-    liElement.textContent = `${lista.length} - ${participante.nome}`;
+    liElement.appendChild(span);
 
     let deleteButton = document.createElement("button");
     deleteButton.textContent = "X";
@@ -69,13 +71,17 @@ function onSortear() {
 function mostrarResultado(lista) {
     let resultado = document.querySelector("#resultado");
 
+    let textoResultado = document.createElement("span");
     let resultadoElement = document.createElement("li");
-    resultadoElement.textContent = "Resultado do sorteio:";
+    textoResultado.textContent = "Resultado do sorteio:";
+    resultadoElement.appendChild(textoResultado);
     resultado.appendChild(resultadoElement);
 
     lista.forEach(participante => {
         let liElement = document.createElement("li");
-        liElement.textContent = `Participante: ${participante.nome} - Amigo secreto: ${participante.amigoSecreto}`;
+        let span = document.createElement("span");
+        span.textContent = `Participante: ${participante.nome} - Amigo secreto: ${participante.amigoSecreto}`;
+        liElement.appendChild(span);
         resultado.appendChild(liElement);
     });
 }
